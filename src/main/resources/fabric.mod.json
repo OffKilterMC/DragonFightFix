@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "dragonfightfix",
+  "version": "${version}",
+  "name": "DragonFightFix",
+  "description": "",
+  "authors": ["OffKilterMC"],
+  "contact": {
+    "repo": "https://github.com/offkiltermc/DragonFightFix"
+  },
+  "license": "MIT",
+  "icon": "assets/dragonfightfix/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.offkiltermc.dragonfightfix.client.DragonFightFixClient"
+    ],
+    "main": [
+      "com.offkiltermc.dragonfightfix.DragonFightFix"
+    ]
+  },
+  "mixins": [
+    "dragonfightfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
