@@ -3,10 +3,11 @@
   "id": "dragonfightfix",
   "version": "${version}",
   "name": "DragonFightFix",
-  "description": "",
+  "description": "A simple mod to fix the issue where the dragon fight can get stuck if you quit the game while the Ender Dragon is making her dramatic entrance.",
   "authors": ["OffKilterMC"],
   "contact": {
-    "repo": "https://github.com/offkiltermc/DragonFightFix"
+    "sources": "https://github.com/offkiltermc/DragonFightFix",
+    "issues": "https://github.com/offkiltermc/DragonFightFix/issues"
   },
   "license": "MIT",
   "icon": "assets/dragonfightfix/icon.png",
