@@ -13,10 +13,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.offkiltermc.dragonfightfix.client.DragonFightFixClient"
+      "net.offkiltermc.dragonfightfix.client.DragonFightFixClient"
     ],
     "main": [
-      "com.offkiltermc.dragonfightfix.DragonFightFix"
+      "net.offkiltermc.dragonfightfix.DragonFightFix"
     ]
   },
   "mixins": [

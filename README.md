@@ -15,3 +15,8 @@ this way.
 The end result (pun intended) is that the dragon restarts the respawn cycle from the start once you rejoin. Ideally it 
 would be great if we could just remember where we left off, but that's a bunch of state to save, and I thought it was
 overkill for this small fix. 
+
+NOTE: This doesn't get you unstuck. Generally, the best ways to unstick yourself is to throw yourself into the void, or
+if you really need to: go into creative and destroy/reset the 4 crystals around the portal frame. Another way, if you
+have this mod and NBTExplorer, would be to add a byte tag in the DragonFight entry called isRespawning, and set it to 1. 
+Then restart the game and this mod will take care of the rest.

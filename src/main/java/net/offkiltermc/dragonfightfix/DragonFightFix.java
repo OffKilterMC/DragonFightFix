@@ -1,4 +1,4 @@
-package com.offkiltermc.dragonfightfix;
+package net.offkiltermc.dragonfightfix;
 
 import net.fabricmc.api.ModInitializer;
 

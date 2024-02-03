@@ -1,4 +1,4 @@
-package com.offkiltermc.dragonfightfix.mixin;
+package net.offkiltermc.dragonfightfix.mixin;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.dimension.end.DragonRespawnAnimation;
@@ -19,8 +19,6 @@ public abstract class DragonFightMixin {
 
     @Shadow public abstract void resetSpikeCrystals();
 
-    @Unique
-    private static final Logger LOGGER = LogUtils.getLogger();
     @Unique
     private static Boolean shouldResetSpikeCrystals = false;
 
@@ -45,7 +43,6 @@ public abstract class DragonFightMixin {
     @Inject(method="<init>*", at=@At("RETURN"))
     private void onConstruct(CallbackInfo ci) {
         if (this.respawnStage == DragonRespawnAnimation.START) {
-            LOGGER.info("NEED TO RESET SPIKE CRYSTALS");
             shouldResetSpikeCrystals = true;
         }
     }
